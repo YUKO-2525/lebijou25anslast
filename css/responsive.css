@@ -1,0 +1,269 @@
+body
+{
+	margin: 0 ;				/* スペース */
+	padding: 0 ;			/* 余白 */
+	font-size: 15px ;		/* 文字サイズ */
+	line-height: 1.618 ;	/* 行の高さ */
+}
+
+/* スマホだけに適用するCSS */
+@media screen and ( max-width:479px )
+{
+    
+    h1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 15px;
+    }
+
+   .navcontainer{
+       display: none;
+   }
+
+
+
+   .sp-navcontainer{
+       display: block;
+       width:90vw;
+       margin: 0 auto;
+   }
+
+    .header-logo{
+        display: none;
+    }
+
+    .menu-part{
+        display: none;
+    }
+
+    .icon-part{
+        display: none;
+    }
+
+    .nav-item{
+        display: none ;
+    }
+    
+
+    .splogo {
+         display: block !important; 
+         margin: 10px auto;
+
+ }
+
+
+
+ /* ハンバーガーメニューのCSS*/
+
+     .sp-menu{
+         display: block;
+     }
+     .ham {
+        position: fixed;
+      top: 9px;
+      left: 9px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        background-color:#E4CDCD;
+        z-index: 3;
+    }
+    .ham_line {
+        position: absolute;
+        left: 10px;
+        width: 20px;
+        height: 2px;
+        background-color: white;
+    }
+    .ham_line1 {
+        top: 10px;
+    }
+    .ham_line2 {
+        top: 18px;
+    }
+    .ham_line3 {
+        top: 26px;
+    }
+    
+    
+    
+    
+    
+    
+    .ham_line {
+        transition: all 0.3s;
+    }
+    
+    /* 以下はすべて新規行で追加 */
+    .clicked .ham_line1 {
+        transform: rotate(45deg);
+        top: 20px;
+    }
+    .clicked .ham_line2 {
+        width: 0px;
+    }
+    .clicked .ham_line3 {
+        transform: rotate(-45deg);
+        top: 20px;
+    }
+    
+    
+    
+    
+    .menu {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: -100vh;
+        background-color: #E4CDCD;
+        transition: all 0.3s;
+        text-align: center;
+        
+    }
+    .menu ul{
+        padding-left: 0px;
+        padding-top: 60px;
+        height: 100vh;
+    }
+    
+    .menu li{
+        font-family: Noto,serif;
+        color: white;
+        list-style: none;
+        text-decoration: none;
+        font-size: 24px;
+        line-height: 300%;;
+    }
+
+　　 a{
+    text-decoration: none;
+}
+    
+    .clicked .menu {
+        z-index: 5;
+        top: 48px;
+    }
+    
+    body li a{
+        text-decoration: none;
+        color: white
+    }
+/*ここまで*/
+    nav{
+    width: 100vw;
+    height: 60px;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    
+    }
+
+
+    header{
+        position:absolute;
+        top: 60px;
+    }
+
+
+	header img{
+        width: 100%;
+        height: auto;
+    }
+
+
+    .container{
+        position: relative;
+        top: 248px;
+    }
+
+
+    .collection-item-text {
+        text-align:center;
+        
+        font-size: 14px;
+    }
+        
+    .collection{
+        margin: 0 auto;
+    }
+
+    figure img{
+        width: 100%;
+        height:auto;
+    }
+
+    .parent{
+        margin-top: 0px;
+    }
+
+
+    .viewmore{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .viewmorebtn{
+        margin-top: 5px;
+    }
+
+    .obi{
+       display: none;
+    }
+    
+
+    .featuredin{
+        width: 100%;
+    margin: 0 auto;
+    height: auto;
+   
+    }
+
+    .featuredin img{
+        width: 120px;
+        height: auto;
+    }
+    
+
+
+    .aboutus{
+        height: 300px;
+    }
+    .aboutus p{
+        font-size: 10px;
+        
+    }
+    .copy-text{
+        position: relative;
+        top: 47px;
+    }
+
+    .aboutus-title{
+        margin-bottom: 0px;
+    }
+
+    .conceptimg{
+     width: 100%;
+    position: relative;
+    top: 0px;
+    }
+
+   .background{
+    position: absolute;
+    top: 63px;
+    height: 50%;
+
+    }
+
+    .feature{
+        margin-top:80px;
+    }
+  footer{
+      margin-top:0px;
+      position: relative;
+      top: 322px;
+  }
+}
+
+
+/*タブレットのみに適用するCSS*/
+
